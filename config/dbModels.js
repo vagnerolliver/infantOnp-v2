@@ -1,10 +1,11 @@
  
 const mongoose = require('mongoose');
 
-// const dbURI = 'mongodb://user:user@ds013574.mlab.com:13574/infanton';
-const dbURI = 'mongodb://127.0.0.1/modelo-padrao';
+ const dbURI = 'mongodb://127.0.0.1/modelo-padrao';
+//const dbURI = 'mongodb://vagnerolliver:teste123@ds013574.mlab.com:13574/infantonv2';
 
-mongoose.connect(dbURI);
+
+mongoose.connect(dbURI); 
 
 mongoose.connection.on('connected', function () {
   console.log('Mongoose default connection connected to ' + dbURI);
@@ -27,7 +28,7 @@ process.on('SIGINT', function() {
 });
 
 
-mongoose.model('User', require('../modules/User/molecules/user'));
+mongoose.model('User', require('../modules/User/model'));
 mongoose.model('Aluno', require('../modules/Aluno/molecules/aluno'));
-mongoose.model('Curso', require('../modules/Curso/molecules/curso'));
-mongoose.model('Professor', require('../modules/Professor/molecules/professorCurso'));
+mongoose.model('Turma', require('../modules/Turma/molecules/turma'));
+mongoose.model('Funcionario', require('../modules/Funcionario/molecules/funcionario'));

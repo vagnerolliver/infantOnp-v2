@@ -1,0 +1,10 @@
+<div class="container section">
+	<form class="form-auth" ng-submit="register()">
+		<h2>Criar uma conta</h2>
+		<pre>{{ Login }}</pre>
+		<p class="text-warning">{{ Login.error_message }}</p>
+		<input type="email" ng-model="Login.form.email" placeholder="Username" class="form-control"><br>
+		<input type="password" ng-model="Login.form.password" placeholder="Password" class="form-control"><br>
+		<input type="submit" value="Log in" class="btn btn-primary" />
+	</form>
+</div>

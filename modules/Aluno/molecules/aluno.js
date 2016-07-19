@@ -5,7 +5,7 @@ const Molecule = {
   user_id: require('./../atoms/userRef')(Schema)
 , name: require('./../atoms/name')
 , dateBirth: require('./../atoms/dateBirth')
-, cursos: [ require('./../atoms/cursoRef')(Schema) ]
+, turmas: [ require('./../atoms/turmaRef')(Schema) ]
 } 
 
 module.exports = new Schema(Molecule); 
