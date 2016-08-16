@@ -1,0 +1,1 @@
+module.exports = 'O nome da turma {VALUE} não pode ficar em branco';
